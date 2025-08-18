@@ -346,6 +346,9 @@ header {
         bottom: 15px;
     }
 }
+.profile-mobile-item{
+    display: none; 
+}
 
 @media (max-width: 768px) {
     #menu-icon {
@@ -373,8 +376,17 @@ header {
         margin: 0.5rem 0;
         text-align: center;
     }
+    .profile-desktop{
+        display: none; 
+    }
+    .profile-mobile-item {
+        display: block; 
+    }
     .profile {
-        display: none; /* Hide profile on small screens */
+        justify-content: center;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
     }
     .swiper {
         height: 60vh;
@@ -420,3 +432,4 @@ header {
         bottom: 8px;
     }
 }
+
